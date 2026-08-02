@@ -1,0 +1,527 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+    background:#f5f7fb;
+    color:#1d1d1f;
+
+    scroll-behavior:smooth;
+
+}
+
+/* ==========================
+   GLOBAL
+========================== */
+
+h1{
+
+    font-size:72px;
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:42px;
+    font-weight:700;
+    color:#444;
+
+}
+
+p{
+
+    color:#6b7280;
+    line-height:1.7;
+
+}
+
+span{
+
+    color:#4f46e5;
+
+}
+
+button{
+
+    border:none;
+    outline:none;
+    cursor:pointer;
+
+    border-radius:999px;
+
+    transition:.3s;
+
+    font-family:"Inter",sans-serif;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:80px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 80px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+nav li{
+
+    cursor:pointer;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav li:hover{
+
+    color:#2563eb;
+
+}
+
+.nav-btn{
+
+    background:#111;
+
+    color:white;
+
+    padding:12px 25px;
+
+    font-size:16px;
+
+}
+
+.nav-btn:hover{
+
+    background:#2563eb;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    max-width:850px;
+
+    margin:140px auto 90px;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.hero h2{
+
+    margin-top:20px;
+
+}
+
+.hero p{
+
+    margin:25px 0 40px;
+
+    font-size:22px;
+
+}
+
+.hero button{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:18px 42px;
+
+    font-size:18px;
+
+}
+
+.hero button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.features{
+
+    max-width:1200px;
+
+    margin:0 auto 100px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    padding:20px;
+
+}
+
+.card{
+
+    width:320px;
+
+    min-height:330px;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.icon{
+
+    font-size:54px;
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+}
+
+.card p{
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   CONVERTER
+========================== */
+
+.converter{
+
+    max-width:720px;
+
+    margin:120px auto;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:50px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.converter h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.converter label{
+
+    display:block;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+}
+
+.converter input,
+
+.converter select{
+
+    width:100%;
+
+    padding:18px;
+
+    font-size:18px;
+
+    border-radius:14px;
+
+    border:2px solid #ddd;
+
+    margin-bottom:22px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.converter input:focus,
+
+.converter select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* ==========================
+   BUTTON GROUP
+========================== */
+
+.button-group{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:10px;
+
+}
+
+.button-group button{
+
+    flex:1;
+
+    padding:16px 20px;
+
+    font-size:17px;
+
+    border-radius:14px;
+
+    color:white;
+
+}
+
+.swap-btn{
+
+    background:#374151;
+
+}
+
+.swap-btn:hover{
+
+    background:#1f2937;
+
+}
+
+.convert-btn{
+
+    background:#2563eb;
+
+}
+
+.convert-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.clear-btn{
+
+    background:#ef4444;
+
+}
+
+.clear-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ==========================
+   RESULT
+========================== */
+
+.result-box{
+
+    margin-top:35px;
+
+    text-align:center;
+
+}
+
+#result{
+
+    font-size:26px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+    word-break:break-word;
+
+}
+
+/* ==========================
+   COPY BUTTON
+========================== */
+
+.copy-btn{
+
+    display:none;
+
+    width:220px;
+
+    padding:15px 20px;
+
+    background:#10b981;
+
+    color:white;
+
+    font-size:16px;
+
+    margin:auto;
+
+}
+
+.copy-btn:hover{
+
+    background:#059669;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+    nav{
+
+        padding:0 25px;
+
+    }
+
+    nav ul{
+
+        gap:18px;
+
+    }
+
+    h1{
+
+        font-size:52px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .button-group{
+
+        flex-direction:column;
+
+    }
+
+    .features{
+
+        padding:15px;
+
+    }
+
+    .converter{
+
+        margin:60px 15px;
+
+        padding:30px;
+
+    }
+
+    h1{
+
+        font-size:42px;
+
+    }
+
+    .hero h2{
+
+        font-size:32px;
+
+    }
+
+}
