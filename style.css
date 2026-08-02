@@ -153,34 +153,6 @@ nav li:hover{
 }
 
 /* ==========================
-   HAMBURGER (hidden on desktop)
-========================== */
-
-.hamburger{
-
-    display:none;
-
-    background:none;
-
-    font-size:28px;
-
-    color:#111;
-
-    cursor:pointer;
-
-    padding:5px 10px;
-
-}
-
-.hamburger:hover{
-
-    transform:none;
-
-    color:#2563eb;
-
-}
-
-/* ==========================
    HERO
 ========================== */
 
@@ -524,27 +496,6 @@ nav li:hover{
     .nav-btn{
 
         display:none;
-
-    }
-
-    nav ul.show{
-
-        display:flex;
-        flex-direction:column;
-        position:absolute;
-        top:80px;
-        left:0;
-        width:100%;
-        background:white;
-        padding:20px 30px;
-        gap:20px;
-        box-shadow:0 10px 20px rgba(0,0,0,.08);
-
-    }
-
-    .hamburger{
-
-        display:block;
 
     }
 
