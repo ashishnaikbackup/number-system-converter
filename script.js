@@ -1,6 +1,6 @@
 // Stores the latest converted value
 let lastAnswer = "";
-
+ 
 function convertNumber() {
 
     let number = document.getElementById("numberInput").value.trim();
