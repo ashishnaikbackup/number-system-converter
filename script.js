@@ -1,11 +1,6 @@
 // Stores the latest converted value
 let lastAnswer = "";
 
-// Toggles the mobile nav menu
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
-}
-
 function convertNumber() {
 
     let number = document.getElementById("numberInput").value.trim();
